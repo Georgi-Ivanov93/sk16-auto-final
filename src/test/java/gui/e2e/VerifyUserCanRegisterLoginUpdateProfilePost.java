@@ -82,8 +82,8 @@ public class VerifyUserCanRegisterLoginUpdateProfilePost extends BaseTest {
     @Test(priority = 1)
     public void verifyTheUserCanLoginWithValidCredentials(ITestContext context) throws InterruptedException {
 
-        context.setAttribute("userName", "JoRro0");
-        context.setAttribute("password", "Georgi123*");
+        context.setAttribute("userName", "georgi_ivanov");
+        context.setAttribute("password", "Georgi123");
         HomePage homePage = new HomePage(super.driver, log);
 
         log.info("STEP 5: Not logged in user has opened the Skillo HomePage.");
@@ -131,8 +131,8 @@ public class VerifyUserCanRegisterLoginUpdateProfilePost extends BaseTest {
 
     @Test(priority = 2)
     public void verifyUserCanCreatePost(ITestContext context) {
-        context.setAttribute("userName", "JoRro0");
-        context.setAttribute("password", "Georgi123*");
+        context.setAttribute("userName", "georgi_ivanov");
+        context.setAttribute("password", "Georgi123");
         log.info("STEP 12: Already registered user is landing on Iskilo Home page");
         HomePage homePage = new HomePage(super.driver, log);
         homePage.openHomePage();

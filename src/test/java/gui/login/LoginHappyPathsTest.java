@@ -16,8 +16,8 @@ public class LoginHappyPathsTest extends BaseTest {
     @Test()
     public void verifyTheUserCanLoginWithValidCredentials(ITestContext context) throws InterruptedException {
 
-        context.setAttribute("userName", "JoRro0");
-        context.setAttribute("password", "Georgi123*");
+        context.setAttribute("userName", "georgi_ivanov");
+        context.setAttribute("password", "Georgi123");
         HomePage homePage = new HomePage(super.driver, log);
 
         log.info("STEP 1: Not logged in user has opened the Skillo HomePage.");

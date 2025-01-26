@@ -18,8 +18,8 @@ public class LoginNegativePathsTest extends BaseTest {
 
         context.setAttribute("wrongUserName", "wrongUsername");
         context.setAttribute("wrongPassword", "wrongPassword");
-        context.setAttribute("userName", "JoRro0");
-        context.setAttribute("password", "Georgi123*");
+        context.setAttribute("userName", "georgi_ivanov");
+        context.setAttribute("password", "Georgi123");
 
         LoginPage loginPage = new LoginPage(super.driver, log);
 

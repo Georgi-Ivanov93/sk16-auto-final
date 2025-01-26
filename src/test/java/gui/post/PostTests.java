@@ -16,8 +16,8 @@ public class PostTests extends BaseTest {
 
     @Test(priority = 0)
     public void verifyUserCanCreatePost(ITestContext context) {
-        context.setAttribute("userName", "JoRro0");
-        context.setAttribute("password", "Georgi123*");
+        context.setAttribute("userName", "georgi_ivanov");
+        context.setAttribute("password", "Georgi123");
         log.info("STEP 1: Already registered user is landing on Iskilo Home page");
         HomePage homePage = new HomePage(super.driver, log);
         homePage.openHomePage();
